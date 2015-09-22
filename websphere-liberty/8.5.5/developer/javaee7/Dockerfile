@@ -1,4 +1,3 @@
-# (C) Copyright IBM Corporation 2015.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,7 +11,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM websphere-liberty:webProfile7
+FROM thaihau/websphere-liberty:webProfile7
 
 COPY server.xml /opt/ibm/wlp/usr/servers/defaultServer/ 
 RUN installUtility install --acceptLicense defaultServer \
